@@ -6,3 +6,5 @@ config/play.backup.yml
 .sass-cache
 vendor/gems
 .DS_Store
+redis.log
+redis.rdb
