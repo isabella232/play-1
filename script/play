@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo 'Starting Redis...'
+redis-server redis.conf &
+echo 'Starting Play...'
+bundle exec rake start
+echo 'Play terminated'
+echo 'Shutting down Redis...'
+redis-cli shutdown
+echo 'Finished'
